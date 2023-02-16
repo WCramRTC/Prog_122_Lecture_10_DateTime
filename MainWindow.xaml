@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prog_122_Lecture_10_DateTime"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="536" Width="800">
+    <Canvas Background="#FF98002E">
+        <RichTextBox Height="387" Width="336" Canvas.Left="324" Canvas.Top="24" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplay" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="txtDay" Canvas.Left="59" TextWrapping="Wrap" Canvas.Top="72" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Day" Canvas.Left="59" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FFFFFBFB"/>
+        <TextBox x:Name="txtMonth" Canvas.Left="59" TextWrapping="Wrap" Canvas.Top="142" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Month" Canvas.Left="59" Canvas.Top="112" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FFFFFBFB"/>
+        <TextBox x:Name="txtYear" Canvas.Left="59" TextWrapping="Wrap" Canvas.Top="207" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Year" Canvas.Left="59" Canvas.Top="176" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FFFFFBFB"/>
+        <Button x:Name="btnDisplayTime" Content="Display Time" Canvas.Left="215" Canvas.Top="142" HorizontalAlignment="Left" VerticalAlignment="Top" Width="88" Click="btnDisplayTime_Click"/>
+        <Button x:Name="btnCheckAgeForLicense" Content="Drivers License" Canvas.Left="215" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Center" Width="93" Click="btnCheckAgeForLicense_Click"/>
+        <DatePicker x:Name="dpDate" Canvas.Left="59" Canvas.Top="248"/>
+        <Calendar x:Name="calDate" Canvas.Left="30" Canvas.Top="305"/>
+        <Button x:Name="btnResults" Content="Results" Canvas.Left="243" Canvas.Top="272" Height="27" Width="65" Click="btnResults_Click"/>
+    </Canvas>
 </Window>
